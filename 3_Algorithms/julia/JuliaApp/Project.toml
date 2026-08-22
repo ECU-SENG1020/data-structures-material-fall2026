@@ -1,0 +1,11 @@
+name = "JuliaApp"
+uuid = "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+version = "0.1.0"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
+
+[compat]
+BenchmarkTools = "1.8.0"
+PackageCompiler = "2.4.0"

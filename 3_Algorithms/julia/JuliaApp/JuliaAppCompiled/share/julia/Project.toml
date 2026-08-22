@@ -1,0 +1,4 @@
+name = "JuliaApp"
+uuid = "13e0dc33-613e-4c1f-bff0-fea4b14c5983"
+
+[deps]

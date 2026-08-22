@@ -1,0 +1,3 @@
+using JuliaApp
+
+JuliaApp.main()

@@ -1,0 +1,10 @@
+numpy
+pandas
+pytest
+jupyter
+matplotlib
+ipython
+networkx
+pytest-cov
+black
+flake8
