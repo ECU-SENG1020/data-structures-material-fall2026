@@ -141,6 +141,8 @@ print("Days:", days)
 weekdays = days[0:5]  # From index 0 to 4
 print("Weekdays (0:5):", weekdays)
 
+print(type(weekdays))
+
 # Omit start - goes from beginning
 first_three = days[:3]  # Same as days[0:3]
 print("First three (:3):", first_three)

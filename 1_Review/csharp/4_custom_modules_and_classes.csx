@@ -1,30 +1,20 @@
-using System;
 
-var person = new Person("Alice", 30);
-person.Greet();
+#load "Models/Cat.csx"
+#load "Models/Dog.csx"
+#load "Models/Person.csx"
 
-var dog = new Dog("Cinna", 2);
-dog.Greet();
+var p1 = new Person("Alice", 30);
+p1.Greet();
 
-var cat = new Cat("Cat1", 100);
-cat.Greet();
+var d1 = new Dog("Cinna", 2);
+d1.Greet();
 
-public class Person
-{
-    public string Name { get; }
-    public int Age { get; }
+var d2 = new Dog("Joey", 13);
+d2.Greet();
 
-    public Person(string name, int age)
-    {
-        Name = name;
-        Age = age;
-    }
+var c1 = new Cat("Cat1", 100);
+c1.Greet();
 
-    public void Greet()
-    {
-        Console.WriteLine($"Hello, my name is {Name} and I am {Age} years old.");
-    }
-}
 
 public class Dog
 {

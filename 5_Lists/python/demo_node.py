@@ -1,40 +1,40 @@
 from NodeModule import Node
 
-node = Node("a")
+nodeA = Node("a")
 
-print(node.data)
+print(nodeA.data)
 
-print(node)
+print(nodeA)
 
-node2 = Node("b")
-print(node2)
+nodeB = Node("b")
+print(nodeB)
 
-next = Node("c")
-print(next)
+nodeC = Node("c")
+print(nodeC)
+print("***********")
+nodeA.next = Node("b")
+print(nodeA.next)
+print(nodeA.next.data)
 
-node.next = Node("b")
-print(node.next)
+print(type(nodeA))
+print(type(nodeA.next))
 
-print(type(node))
-print(type(node.next))
+nodeA.next.next = Node("c")
 
-node.next.next = Node("c")
+print(nodeA.next.next)
 
-print(node.next.next)
-
-print(node.next.next.data)
-# # print(node.next.next.data)
+print(nodeA.next.next.data)
 print("print fourth node")
-print(node.next.next.next)
+print(nodeA.next.next.next)
 
-current_node = node
-count = 0
-while current_node:
-    print(current_node.data)
-    count = count + 1
-    current_node = current_node.next
+# current_node = nodeA
+# count = 0
+# while current_node:
+#     print(current_node.data)
+#     count = count + 1
+#     current_node = current_node.next
 
-print(count)
+# print(count)
 
 # builtin_list = ["a","b","c"]
 # builtin_list.append("d")

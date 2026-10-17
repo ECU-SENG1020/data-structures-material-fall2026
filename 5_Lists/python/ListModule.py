@@ -53,6 +53,20 @@ class DsList:
     def __getitem__(self, index):
         node = self.head
         count = 0
+
+        if isinstance(index, slice):
+            # index.start, index.stop, index.step
+            result = DsList()
+            while node:
+                if count in range(index.start, index.stop, index.step):
+                    result.append(node.data)
+
+                node = node.next
+                count += 1
+                if count >= index.stop:
+                    return result
+
+
         while node:
             if count == index:
                 return node.data
