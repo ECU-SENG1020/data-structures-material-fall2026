@@ -1,4 +1,3 @@
-from email.mime import text
 import pathlib
 from TupleModule import DsTuple
 import sys
